@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "My NextJS Web App",
-  description: "Setting up Dark Mode in NextJS!",
+  title: "Home | fpetranzan.com",
+  description: "Francesco Petranzan Portfolio",
 };
 
 export default function RootLayout({
