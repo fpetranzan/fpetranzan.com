@@ -10,19 +10,17 @@ export default () => {
       { lang: "it", fullName: "Italian", shortName: "IT" },
     ];  
     
-    function handleLangChange({ lang}: { lang: string }) {
+    function handleLangChange(lang: string ) {
       const language = lang ? "/" + lang : "/en";
       router.push(`${language}`);
-    }  
+    }
     
     return (
-      <select defaultValue={pathname.slice(1)}>
+      <select defaultValue={pathname.slice(1)} onChange={e => handleLangChange(e.target.value)}>
         {langs.map((lang) => (
           <option
             key={lang.lang}
-            //value={lang.lang}
             value={lang.lang}
-            onClick={() => handleLangChange(lang)}
           >
             {lang.shortName}
           </option>
