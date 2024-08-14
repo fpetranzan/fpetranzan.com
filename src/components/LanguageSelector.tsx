@@ -16,7 +16,7 @@ export default () => {
     }
     
     return (
-      <select defaultValue={pathname.slice(1)} onChange={e => handleLangChange(e.target.value)}>
+      <select defaultValue={pathname.slice(1)} onChange={e => handleLangChange(e.target.value)} className="mr-0">
         {langs.map((lang) => (
           <option
             key={lang.lang}
