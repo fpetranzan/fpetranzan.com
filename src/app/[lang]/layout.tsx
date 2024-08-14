@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import '../globals.css';
 
 export const metadata: Metadata = {
   title: "Home | fpetranzan.com",
@@ -13,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="mx-auto max-w-4xl">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
