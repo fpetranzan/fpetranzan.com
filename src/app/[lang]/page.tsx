@@ -1,15 +1,13 @@
-import ThemeToggle from "../../components/ThemeToggle";
-import LanguageSelector from "../../components/LanguageSelector";
 import { getDictionary } from "../Dictionaries";
 
 async function Home({ params }: any) {
-  const { test } = await getDictionary(params.lang);
+  const { aboutMe } = await getDictionary(params.lang);
 
   return (<>
-    <ThemeToggle />
-    <LanguageSelector />
-
-    <h1>{test}</h1>
+    <div>
+      <p className="text-2xl mb-5">{aboutMe.title}</p>
+      <p>{aboutMe.body}</p>
+    </div>
   </>);
 }
 
