@@ -1,3 +1,6 @@
 {
-    "test": "Questa è una prova"
+    "aboutMe": {
+        "title": "Ciao, io sono Francesco 👋",
+        "body": "sono un Software Developer"
+    }
 }
