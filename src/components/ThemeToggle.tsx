@@ -4,7 +4,7 @@ import {useTheme} from 'next-themes'
 const DarkModeToggle = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className='ml-auto'>
         toggle
     </button>
   );
