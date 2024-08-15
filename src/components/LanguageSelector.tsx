@@ -16,11 +16,12 @@ export default () => {
     }
     
     return (
-      <select defaultValue={pathname.slice(1)} onChange={e => handleLangChange(e.target.value)} className="mr-0">
+      <select defaultValue={pathname.slice(1)} onChange={e => handleLangChange(e.target.value)} className="mr-0 bg-transparent">
         {langs.map((lang) => (
           <option
             key={lang.lang}
             value={lang.lang}
+            className="dark:text-black"
           >
             {lang.shortName}
           </option>
