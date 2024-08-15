@@ -4,7 +4,9 @@ import ThemeToggle from "./ThemeToggle";
 
 const Footer = () => {
   return (<>
-        <div className="my-20">fpetranzan.com - My personal Portfolio © 2024 Francesco Petranzan.</div>
+        <div className="my-20">
+          <p>fpetranzan.com - My personal Portfolio © 2024 Francesco Petranzan.</p>
+        </div>
     </>
   );
 };
