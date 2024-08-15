@@ -1,6 +1,5 @@
 'use client';
 
-import {useParams} from 'next/navigation';
 import {ChangeEvent, ReactNode, useTransition} from 'react';
 import {useRouter, usePathname} from '@/navigation';
 import {Locale} from '@/types';
@@ -18,15 +17,13 @@ export default function LocaleSwitcherSelect({
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
-  const params = useParams();
 
   function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
     const nextLocale = event.target.value as Locale;
     startTransition(() => {
       router.replace(
         {
-          pathname,
-          params
+          pathname
         },
         {locale: nextLocale}
       );
