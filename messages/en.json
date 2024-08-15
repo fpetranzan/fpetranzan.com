@@ -1,0 +1,15 @@
+{
+    "Menu": {
+        "home": "Home",
+        "project": "Project",
+        "work": "Work"
+    },
+    "AboutMe": {
+        "title": "Hi, I'm Francesco 👋",
+        "body": "I'm a Software Developer"
+    },
+    "LocaleSwitcher": {
+      "label": "English",
+      "locale": "{locale, select, it {IT} en {EN} other {Unknown}}"
+    }
+}

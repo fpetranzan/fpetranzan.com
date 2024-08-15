@@ -1,15 +1,20 @@
+"use client";
+
 import Link from "next/link";
-import LanguageSelector from "./LanguageSelector";
 import ThemeToggle from "./ThemeToggle";
+import LocaleSwitcher from "./LocaleSwitch";
+import {useTranslations} from 'next-intl';
 
 const Header = () => {
+  const t = useTranslations('Menu');
+  
   return (<>
         <div className="my-20 flex gap-8">
-            <Link href={""}>Home</Link>
-            <Link href={""}>Project</Link>
-            <Link href={""}>Work</Link>
+            <Link href={"/"}>{t('home')}</Link>
+            <Link href={"/project"}>{t('project')}</Link>
+            <Link href={"/work"}>{t('work')}</Link>
             <ThemeToggle />
-            <LanguageSelector />
+            <LocaleSwitcher />
         </div>
     </>
   );
