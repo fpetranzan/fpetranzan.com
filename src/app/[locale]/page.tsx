@@ -1,5 +1,4 @@
 'use client';
-
 import {useTranslations} from 'next-intl';
 
 async function HomePage() {

@@ -18,6 +18,7 @@ const robotoCondensed = Roboto_Condensed({
 
 export default async function RootLayout({
   children,
+  params: {locale}
 }: {
   children: React.ReactNode;
   params: {locale: string};
@@ -25,7 +26,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`mx-auto max-w-4xl ${robotoCondensed.className}`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
