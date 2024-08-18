@@ -4,12 +4,17 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Roboto_Condensed } from 'next/font/google'
 import '../globals.css';
 
 export const metadata: Metadata = {
   title: "Home | fpetranzan.com",
   description: "Francesco Petranzan Portfolio",
 };
+
+const robotoCondensed = Roboto_Condensed({
+  subsets: ['latin'],
+})
 
 export default async function RootLayout({
   children,
@@ -21,7 +26,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="mx-auto max-w-4xl">
+      <body className={`mx-auto max-w-4xl ${robotoCondensed.className}`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Header />
