@@ -1,13 +1,13 @@
 {
     "Menu": {
         "home": "Home",
-        "project": "Progetti",
-        "work": "Lavoro"
+        "works": "Lavori",
+        "projects": "Progetti"
     },
     "AboutMe": {
         "title": "Ciao, io sono Francesco 👋",
-        "body": {
-            "paragrapths": {
+        "Body": {
+            "Paragrapths": {
                 "one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id suscipit elit. Nam vel malesuada purus. Phasellus laoreet arcu odio, in pretium ex scelerisque sagittis. Sed turpis nisl, sollicitudin sagittis diam ac, aliquet pellentesque augue. Morbi laoreet nibh ut posuere hendrerit. Vestibulum sagittis elit vel sapien aliquam interdum. Aliquam luctus ultricies semper. Vestibulum pellentesque elit nibh, id facilisis sapien vestibulum ac. Sed ut enim mattis, interdum purus vitae, lobortis quam.",
                 "two": "Duis ullamcorper ullamcorper mauris, non rutrum nisl egestas dignissim. Vestibulum metus est, rhoncus ut arcu a, laoreet lacinia ante. Cras at gravida sapien. Praesent vitae lectus a odio auctor pharetra. Phasellus at sem laoreet, pharetra tellus eget, ultricies libero. Morbi libero leo, feugiat ut porta eget, cursus facilisis diam. Aenean ut laoreet mauris.",
                 "three": "Quisque arcu eros, varius in orci et, pulvinar volutpat libero. Sed tristique, ligula id consequat mattis, sem eros lacinia ante, vitae ultricies eros velit ac nisl. Integer eget mi nec ante vehicula mattis id ut metus. Ut eget enim at dolor consequat placerat et id nisi. Nam ut arcu quam. Vestibulum accumsan euismod arcu, eget vehicula erat malesuada sit amet. Fusce finibus sit amet sapien sed hendrerit. Praesent tempor tincidunt ante auctor fringilla.",
@@ -16,8 +16,10 @@
             }
         }
     },
-    "LocaleSwitcher": {
-        "label": "Italiano",
-        "locale": "{locale, select, it {IT} en {EN} other {Sconosciuto}}"
+    "Locale": {
+        "Metadata": {
+            "works": "lavori",
+            "projects": "progetti"
+        }
     }
 }
