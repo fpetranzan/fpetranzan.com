@@ -1,17 +1,24 @@
-'use client';
-import {useTranslations} from 'next-intl';
+import PageLayout from "@/components/PageLayout";
 
-async function HomePage() {
-  const t = useTranslations('AboutMe');
-  const keys = ['one', 'two', 'three', 'four', 'five'] as const;
+interface Params {
+  params: {
+    locale: string
+  }
+};
 
+export async function generateMetadata({ params }: Params) {
+  return {
+    openGraph: {
+      title: "Francesco Petranzan",
+      locale: `${params.locale}`,
+      url: `http://fpetranzan.com/${params.locale}`, //capire con gli env
+    },
+  }
+}
+
+async function HomePage({params}: Params) {
   return (<>
-    <div>
-      <p className="text-2xl mb-5">{t('title')}</p>
-      {keys.map((key) => (
-        <p className="my-4">{t(`body.paragrapths.${key}`)}</p>
-      ))}
-    </div>
+    <PageLayout pageName="AboutMe" />
   </>);
 }
 
