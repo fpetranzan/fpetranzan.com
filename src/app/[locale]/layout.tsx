@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Roboto_Condensed } from 'next/font/google'
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import '../globals.css';
 
 export const metadata: Metadata = {
-  title: "Home | fpetranzan.com",
-  description: "Francesco Petranzan Portfolio",
+  metadataBase: new URL("http://localhost:3000/"),
+  title: {
+    default: "Francesco Petranzan - Software Developer",
+    template: "%s | Francesco Petranzan - Software Developer"
+  },
+  description: "Francesco Petranzan Portfolio, Software developer. All about me, my career and my project.",
+  openGraph: {
+    type: "website",
+    siteName: "fpetranzan"
+  },
 };
 
 const robotoCondensed = Roboto_Condensed({
