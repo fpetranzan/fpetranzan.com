@@ -18,8 +18,17 @@
     },
     "Locale": {
         "Metadata": {
-            "works": "works",
-            "projects": "projects"
+            "Home": {
+                "description": "Francesco Petranzan Portfolio, Software developer. All about me, my career and my project."
+            },
+            "Works": {
+                "title": "works",
+                "description": "All about my work and my experinces."
+            },
+            "Projects": {
+                "title": "projects",
+                "description": "All about my projects and my ideas and collaborations."
+            }
         }
     }
 }
