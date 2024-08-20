@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     default: "Francesco Petranzan - Software Developer",
     template: "%s | Francesco Petranzan - Software Developer"
   },
-  description: "Francesco Petranzan Portfolio, Software developer. All about me, my career and my project.",
   openGraph: {
     type: "website",
     siteName: "fpetranzan"
