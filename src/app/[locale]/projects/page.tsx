@@ -9,12 +9,12 @@ interface Params {
 };
 
 export async function generateMetadata({ params }: Params) {
-  const t = await getTranslations('Locale.Metadata');
-  const pageName = t('projects');
+  const t = await getTranslations('Locale.Metadata.Projects');
+  const pageName = t('title');
   
   return {
     title: pageName.charAt(0).toUpperCase() + pageName.slice(1),
-    description: "All about my work and my experinces.",
+    description: t('description'),
     openGraph: {
       title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} | Francesco Petranzan`,
       locale: `${params.locale}`,
