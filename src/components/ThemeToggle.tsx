@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
 import { useTheme } from 'next-themes'
 import {useEffect, useState} from "react"
 import { LuSun, LuMoon } from "react-icons/lu";
 
-const DarkModeToggle = () => {
+export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
   const [hasMounted, setHasMounted] = useState(false)
 
@@ -18,5 +18,3 @@ const DarkModeToggle = () => {
     </button>
   </>);
 };
-
-export default DarkModeToggle;

@@ -1,7 +1,6 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-
-const Social = () => {
+export default function Social() {
   
   return (<>
         <div className="my-10 flex gap-4">
@@ -21,5 +20,3 @@ const Social = () => {
     </>
   );
 };
-
-export default Social;

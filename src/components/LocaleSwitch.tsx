@@ -1,3 +1,5 @@
+'use client';
+
 import { Locale, localeNames, usePathname, useRouter } from '@/i18n';
 import { locales } from '@/config';
 import { ChangeEvent } from 'react';

@@ -2,7 +2,7 @@
 
 import {useTranslations} from 'next-intl';
 
-async function PageLayout(params: {pageName: string}) {
+export default function PageLayout(params: {pageName: string}) {
   const t = useTranslations(params.pageName);
   const keys = ['one', 'two', 'three', 'four', 'five'] as const;
 
@@ -15,5 +15,3 @@ async function PageLayout(params: {pageName: string}) {
     </div>
   </>);
 }
-
-export default PageLayout;
