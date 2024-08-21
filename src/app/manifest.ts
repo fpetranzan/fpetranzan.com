@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Francesco Petranzan Portfolio',
     short_name: 'fpetranzan Portfolio',
-    description: 'Francesco Petranzan Portfolio | All about me, my work experience and my project',
+    description: 'Francesco Petranzan Portfolio | All about me, my experience and my project',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

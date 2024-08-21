@@ -1,9 +1,7 @@
 import {MetadataRoute} from 'next';
 import {locales, pathnames, defaultLocale} from '@/config';
 import {getPathname} from '@/navigation';
- 
-const host = 'http://localhost:3000';
- 
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const keys = Object.keys(pathnames) as Array<keyof typeof pathnames>;
  
@@ -12,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     locale: (typeof locales)[number]
   ) {
     const pathname = getPathname({locale, href: key});
-    return `${host}/${locale}${pathname === '/' ? '' : pathname}`;
+    return `${process.env.BASE_URL}/${locale}${pathname === '/' ? '' : pathname}`;
   }
  
   return keys.map((key) => ({
