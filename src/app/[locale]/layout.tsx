@@ -5,13 +5,12 @@ import { getMessages } from "next-intl/server";
 import { Roboto_Condensed } from 'next/font/google'
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import '../globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000/"),
+  metadataBase: new URL(`${process.env.BASE_URL}`),
   title: {
-    default: "Francesco Petranzan - Software Developer",
-    template: "%s | Francesco Petranzan - Software Developer"
+    default: "Francesco Petranzan - Software Engineer",
+    template: "%s | Francesco Petranzan - Software Engineer"
   },
   openGraph: {
     type: "website",

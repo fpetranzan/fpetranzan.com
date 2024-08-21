@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Params) {
     openGraph: {
       title: "Francesco Petranzan",
       locale: `${params.locale}`,
-      url: `http://fpetranzan.com/${params.locale}`, //capire con gli env
+      url: `/${params.locale}`,
     },
   }
 }
