@@ -1,7 +1,7 @@
 {
     "Menu": {
         "home": "Home",
-        "works": "Lavori",
+        "experiences": "Lavori",
         "projects": "Progetti"
     },
     "AboutMe": {
@@ -21,7 +21,7 @@
             "Home": {
                 "description": "Francesco Petranzan Portfolio, Software developer. Tutto su di me, la mia carriera e i miei progetti."
             },
-            "Works": {
+            "Experiences": {
                 "title": "lavori",
                 "description": "Tutto sui miei lavori ed esperienze."
             },
