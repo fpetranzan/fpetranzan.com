@@ -12,6 +12,23 @@ export const metadata: Metadata = {
     default: "Francesco Petranzan - Software Engineer",
     template: "%s | Francesco Petranzan - Software Engineer"
   },
+  creator: "fpetranzan",
+  publisher: "Francesco Petranzan",
+  category: "Portfolio",
+  keywords: ['Francesco Petranzan', 'Francesco', 'Petranzan', 'Portfolio', 'Software Engineer', 'Developer', 'Backend'],
+  authors: [
+    {
+      name: "fpetranzan",
+      url: "https://github.com/fpetranzan"
+    }
+  ],
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/en',
+      it: '/it'
+    }
+  },
   openGraph: {
     type: "website",
     siteName: "fpetranzan"

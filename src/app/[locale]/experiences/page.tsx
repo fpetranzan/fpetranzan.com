@@ -14,6 +14,13 @@ export async function generateMetadata({ params }: Params) {
   return {
     title: pageName.charAt(0).toUpperCase() + pageName.slice(1),
     description: t('description'),
+    alternates: {
+      canonical: `/${pageName}`,
+      languages: {
+        en: '/en/experiences',
+        it: '/it/lavori'
+      }
+    },
     openGraph: {
       title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} | Francesco Petranzan`,
       locale: `${params.locale}`,
