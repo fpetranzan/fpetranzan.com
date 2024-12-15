@@ -10,6 +10,7 @@ export default function DarkModeToggle() {
 
   useEffect(() => {
     setHasMounted(true)
+    setTheme('dark')
   }, [])
 
   return (<>
