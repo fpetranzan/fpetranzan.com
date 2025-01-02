@@ -1,21 +1,14 @@
 'use client';
 
 import { useTheme } from 'next-themes'
-import {useEffect, useState} from "react"
 import { LuSun, LuMoon } from "react-icons/lu";
 
 export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
-  const [hasMounted, setHasMounted] = useState(false)
-
-  useEffect(() => {
-    setHasMounted(true)
-    setTheme('dark')
-  }, [])
 
   return (<>
     <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className='ml-auto text-lg'>
-      {hasMounted && theme === 'dark' ? <LuSun /> : <LuMoon />}
+      {theme === 'dark' ? <LuSun /> : <LuMoon />}
     </button>
   </>);
 };
