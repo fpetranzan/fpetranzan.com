@@ -3,8 +3,8 @@ import { ThemeProvider } from "next-themes";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Roboto_Condensed } from 'next/font/google'
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/pages/Footer";
+import Header from "@/components/pages/Header";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.BASE_URL}`),

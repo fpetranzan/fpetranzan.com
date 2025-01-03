@@ -1,4 +1,4 @@
-import PageLayout from "@/components/PageLayout";
+import HomePage from "@/components/pages/HomePage";
 import { getTranslations } from "next-intl/server";
 
 interface Params {
@@ -8,7 +8,7 @@ interface Params {
 };
 
 export async function generateMetadata({ params }: Params) {
-  const t = await getTranslations('Locale.Metadata.Home');
+  const t = await getTranslations('metadata.home');
 
   return {
     description: t('description'),
@@ -20,10 +20,10 @@ export async function generateMetadata({ params }: Params) {
   }
 }
 
-async function HomePage({params}: Params) {
+async function Home({params}: Params) {
   return (<>
-    <PageLayout pageName="AboutMe" />
+    <HomePage />
   </>);
 }
 
-export default HomePage;
+export default Home;

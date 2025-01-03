@@ -1,34 +1,51 @@
 {
-    "Menu": {
+    "menu": {
         "home": "Home",
         "experiences": "Lavori",
         "projects": "Progetti"
     },
-    "AboutMe": {
+    "home": {
         "title": "Ciao, io sono Francesco 👋",
-        "Body": {
-            "Paragrapths": {
-                "one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id suscipit elit. Nam vel malesuada purus. Phasellus laoreet arcu odio, in pretium ex scelerisque sagittis. Sed turpis nisl, sollicitudin sagittis diam ac, aliquet pellentesque augue. Morbi laoreet nibh ut posuere hendrerit. Vestibulum sagittis elit vel sapien aliquam interdum. Aliquam luctus ultricies semper. Vestibulum pellentesque elit nibh, id facilisis sapien vestibulum ac. Sed ut enim mattis, interdum purus vitae, lobortis quam.",
-                "two": "Duis ullamcorper ullamcorper mauris, non rutrum nisl egestas dignissim. Vestibulum metus est, rhoncus ut arcu a, laoreet lacinia ante. Cras at gravida sapien. Praesent vitae lectus a odio auctor pharetra. Phasellus at sem laoreet, pharetra tellus eget, ultricies libero. Morbi libero leo, feugiat ut porta eget, cursus facilisis diam. Aenean ut laoreet mauris.",
-                "three": "Quisque arcu eros, varius in orci et, pulvinar volutpat libero. Sed tristique, ligula id consequat mattis, sem eros lacinia ante, vitae ultricies eros velit ac nisl. Integer eget mi nec ante vehicula mattis id ut metus. Ut eget enim at dolor consequat placerat et id nisi. Nam ut arcu quam. Vestibulum accumsan euismod arcu, eget vehicula erat malesuada sit amet. Fusce finibus sit amet sapien sed hendrerit. Praesent tempor tincidunt ante auctor fringilla.",
-                "four": "Nunc sed varius elit, commodo cursus tellus. Phasellus ante velit, mattis vel risus non, euismod interdum eros. Pellentesque mattis augue quis lorem feugiat, sit amet molestie mi ullamcorper. Maecenas pulvinar mi quis cursus dapibus. Vestibulum interdum blandit eros, id porta turpis porttitor id. Curabitur vel pretium ante, id vehicula est. Donec eu mi ultricies, tristique ante interdum, sagittis lectus. Nam accumsan ligula vel convallis sagittis. Integer consequat libero sit amet accumsan lobortis.",
-                "five": "Suspendisse potenti. Donec ut consectetur mauris. Mauris imperdiet dictum elit. Maecenas in ipsum velit. Pellentesque molestie eu dui eget tristique. Nullam scelerisque lacus porta leo egestas, nec feugiat nibh dictum. Etiam id rhoncus elit. Nullam id faucibus orci. Pellentesque in venenatis purus. Nunc eget ligula risus. Pellentesque nec iaculis turpis, ut ornare justo. Sed efficitur ex quam, at commodo sapien fringilla in."
+        "content": "sono un Software Engineer con un percorso in continua evoluzione, guidato dalla curiosità e dalla voglia di raggiungere traguardi sempre più ambiziosi. La mia esperienza si concentra principalmente nello sviluppo back-end per il settore e-commerce, dove ho lavorato su progetti complessi nel mondo della grande distribuzione.<p>Ho contribuito a implementare soluzioni innovative, come la gestione della registrazione e accesso tramite social o la verifica tramite codice OTP, gestione personalizzata dei carrelli abbandonati per ridurre le vendite perse e l’integrazione con SAP OAA per migliorare i processi di sourcing e la gestione del magazzino. Lavorare in un contesto così dinamico mi ha permesso di affinare competenze tecniche su tecnologie come Java, Spring Boot, SQL, Docker e Redis, oltre a sviluppare una forte capacità di problem solving.</p><p>Per me, lo sviluppo software è più di un lavoro: è una passione che mi porta a mettermi continuamente alla prova. Mi piace collaborare con il team, condividere idee e affrontare insieme le sfide, sempre con l’obiettivo di creare codice pulito, mantenibile e scalabile. L’adozione di pratiche come il code review e i test automatizzati fa parte del mio approccio per garantire qualità e affidabilità nei progetti.</p><p>Attualmente sto approfondendo tecnologie come il Cloud, Docker e Kubernetes, con l’obiettivo di ampliare le mie competenze</p><p>Al di fuori del lavoro, sono un ragazzo curioso. Amo il biliardo, i film e le serie TV, e ho praticato diversi sport come: calcio, nuoto, ping pong,... ora frequento regolarmente la palestra. Mi piacciono gli animali, soprattutto i cani, e in passato ho coltivato anche la passione per la musica, suonando la chitarra.</p><p>Quando non sono impegnato a scrivere codice, mi dedico allo studio e al miglioramento delle mie competenze, esplorando nuovi progetti. Credo che la curiosità e la voglia di imparare siano la chiave per crescere, sia professionalmente che personalmente.</p>"
+    },
+    "experiences": {
+        "soprasteria": {
+            "name": "Sopra Steria",
+            "start": "09.2021",
+            "end": "today",
+            "role": "Software Engineer",
+            "tecnologies": {
+                "one": "Java",
+                "two": "Spring Boot",
+                "three": "SQL",
+                "four": "Docker",
+                "five": "Redis",
+                "six": "Hybris"
+            },
+            "description": "Software Engineer presso Sopra Steria, una delle principali aziende europee nel campo della consulenza e dei servizi digitali. Durante questa esperienza, ho avuto l'opportunità di contribuire a progetti di grande impatto nel settore e-commerce, collaborando con clienti della grande distribuzione.",
+            "activities": {
+                "one": "Sviluppo di nuove funzionalità in tema di accessibilità in ambienti di produzione con oltre 50mila registrazioni mensili: verifica della mail tramite OTP, accesso e registrazione tramite Paypal e 2FA in strumenti interni",
+                "two": "Sviluppo di un sistema per l’invio di email personalizzate, con riduzione di oltre il 20% delle vendite perse da carrelli abbandonati",
+                "three": "Integrazione con il framework SAP OAA per una gestione avanzata dell’inventario in un ambiente omnicanale con oltre 4mila ordini giornalieri, ottimizzando i processi di sourcing e allocazione ordini attraverso servizi SAP CAR",
+                "four": "Implementazione di logiche per la conversione dei punti in buoni, con sistema custom per la modifica delle soglie e valore dei buoni",
+                "five": "Miglioramento dei risultati di ricerca e filtri per la navigazione all’interno del catalogo prodotti",
+                "six": "Supporto alla risoluzione di problemi e bug"
             }
         }
     },
-    "Locale": {
-        "Metadata": {
-            "Home": {
-                "description": "Francesco Petranzan Portfolio, Software developer. Tutto su di me, la mia carriera e i miei progetti."
-            },
-            "Experiences": {
-                "title": "lavori",
-                "description": "Tutto sui miei lavori ed esperienze."
-            },
-            "Projects": {
-                "title": "progetti",
-                "description": "Tutto sui miei progetti, le mie idee e le mie collaborazioni."
-            }
+    "metadata": {
+        "home": {
+            "description": "Francesco Petranzan Portfolio, Software developer. Tutto su di me, la mia carriera e i miei progetti."
+        },
+        "experiences": {
+            "title": "Lavori",
+            "description": "Tutto sui miei lavori ed esperienze.",
+            "url": "lavori"
+        },
+        "projects": {
+            "title": "Progetti",
+            "description": "Tutto sui miei progetti, le mie idee e le mie collaborazioni.",
+            "url": "progetti"
         }
     }
 }

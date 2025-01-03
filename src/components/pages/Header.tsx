@@ -1,10 +1,10 @@
-import ThemeToggle from "./ThemeToggle";
-import LocaleSwitcher from "./LocaleSwitch";
+import ThemeToggle from "../utils/ThemeToggle";
+import LocaleSwitcher from "../utils/LocaleSwitch";
 import {useLocale, useTranslations} from 'next-intl';
 import { Link, Locale } from "@/i18n";
 
 export default function Header() {
-  const t = useTranslations('Menu');
+  const t = useTranslations('menu');
   const locale = useLocale() as Locale;
   
   return (<>

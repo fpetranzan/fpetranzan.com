@@ -1,4 +1,4 @@
-import PageLayout from '@/components/PageLayout';
+import ExperiencesPage from '@/components/pages/ExperiencesPage';
 import { getTranslations } from 'next-intl/server';
 
 interface Params {
@@ -8,32 +8,31 @@ interface Params {
 };
 
 export async function generateMetadata({ params }: Params) {
-  const t = await getTranslations('Locale.Metadata.Experiences');
-  const pageName = t('title');
+  const t = await getTranslations('metadata.experiences');
 
   return {
-    title: pageName.charAt(0).toUpperCase() + pageName.slice(1),
+    title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: `/${pageName}`,
+      canonical: `/${t('url')}`,
       languages: {
         en: '/en/experiences',
         it: '/it/lavori'
       }
     },
     openGraph: {
-      title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} | Francesco Petranzan`,
+      title: `${t('title')} | Francesco Petranzan`,
       locale: `${params.locale}`,
-      url: `/${params.locale}/${pageName}`,
+      url: `/${params.locale}/${t('url')}`,
     },
   }
 }
 
-async function Works({params}: Params) {
+async function Experiences({params}: Params) {
 
   return (<>
-    <PageLayout pageName="AboutMe" />
+    <ExperiencesPage />
   </>);
 }
 
-export default Works;
+export default Experiences;
