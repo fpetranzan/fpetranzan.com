@@ -1,16 +1,15 @@
-'use client';
-
-import {useTranslations} from 'next-intl';
+import { useMessages } from 'next-intl';
+import Project from '../utils/Project';
 
 export default function ProjectsPage() {
-  const t = useTranslations('projects');
+  const messages = useMessages();
+  const projects = Object.keys(messages.projects);
 
   return (<>
-    <div>
-      <p className="text-2xl mb-5">{t('title')}</p>
-      {t.rich('content', {
-        p: (chunks) => <p className='my-5'>{chunks}</p>
-      })}
-    </div>
+    {
+      projects.map((project) => (
+        <Project key={project} project={project} />
+      ))
+    }
   </>);
 }
