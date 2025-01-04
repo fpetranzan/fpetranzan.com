@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Params) {
   }
 }
 
-async function Home({params}: Params) {
+async function Home() {
   return (<>
     <HomePage />
   </>);

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Params) {
   }
 }
 
-async function Experiences({params}: Params) {
+async function Experiences() {
 
   return (<>
     <ExperiencesPage />

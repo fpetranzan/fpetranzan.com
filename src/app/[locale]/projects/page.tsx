@@ -1,10 +1,9 @@
-import ExperiencesPage from "@/components/pages/ExperiencesPage";
+import ProjectsPage from "@/components/pages/ProjectsPage";
 import { getTranslations } from "next-intl/server";
 
 interface Params {
   params: {
-    locale: string,
-    section: string
+    locale: string
   }
 };
 
@@ -29,10 +28,10 @@ export async function generateMetadata({ params }: Params) {
   }
 }
 
-async function Projects({params}: Params) {
+async function Projects() {
 
   return (<>
-    <ExperiencesPage />
+    <ProjectsPage />
   </>);
 }
 
