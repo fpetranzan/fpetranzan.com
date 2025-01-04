@@ -12,7 +12,7 @@
         "soprasteria": {
             "name": "Sopra Steria",
             "start": "09.2021",
-            "end": "today",
+            "end": "oggi",
             "role": "Software Engineer",
             "tecnologies": {
                 "one": "Java",
