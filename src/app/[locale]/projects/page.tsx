@@ -1,39 +1,37 @@
-import PageLayout from "@/components/PageLayout";
+import ProjectsPage from "@/components/pages/ProjectsPage";
 import { getTranslations } from "next-intl/server";
 
 interface Params {
   params: {
-    locale: string,
-    section: string
+    locale: string
   }
 };
 
 export async function generateMetadata({ params }: Params) {
-  const t = await getTranslations('Locale.Metadata.Projects');
-  const pageName = t('title');
+  const t = await getTranslations('metadata.projects');
   
   return {
-    title: pageName.charAt(0).toUpperCase() + pageName.slice(1),
+    title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: `/${pageName}`,
+      canonical: `/${t('url')}`,
       languages: {
         en: '/en/projects',
         it: '/it/progetti'
       }
     },
     openGraph: {
-      title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} | Francesco Petranzan`,
+      title: `${t('title')} | Francesco Petranzan`,
       locale: `${params.locale}`,
-      url: `/${params.locale}/${pageName}`,
+      url: `/${params.locale}/${t('url')}`,
     },
   }
 }
 
-async function Projects({params}: Params) {
+async function Projects() {
 
   return (<>
-    <PageLayout pageName="AboutMe" />
+    <ProjectsPage />
   </>);
 }
 

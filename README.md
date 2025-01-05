@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **fpetranzan.com**
 
-## Getting Started
+lang [EN]: [en](https://github.com/fpetranzan/fpetranzan.com/blob/master/README.md) | [it](https://github.com/fpetranzan/fpetranzan.com/blob/master/README_it.md)
 
-First, run the development server:
+**fpetranzan.com** is a personal project created with the goal of creating a simple portfolio, to emphasize content with minimal graphics and functionality. The site includes a description of me, an overview of my work experience, and the projects I have developed.  
+This project provided a personal challenge by giving me the opportunity to develop new knowledge, as I ventured into technologies such as **Next.js** and **Tailwind CSS**, which do not belong to my usual backend developer stack.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Main Features**
+- **Theme Change**: Support for light and dark theme.
+- **Language Change**: Localization of content into multiple languages.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Technologies Used**
+- **Languages e Framework**:
+    - Next.js
+    - Tailwind CSS
+    - React
+- **Library**:
+    - `next`
+    - `next-intl`
+    - `next-themes`
+    - `react`
+    - `react-icons`
+- **Tools**:
+    - Docker
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **Installation**
+The project can be easily executed through **Docker**.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### **Start using Docker**
+1. Clone  the repository:
+   ```bash
+   git clone https://github.com/fpetranzan/fpetranzan.com
+   cd fpetranzan.com
+   ```
+2. Create the Docker image:
+   ```bash
+   docker build --build-arg SETUP_ENVINROMENT=local -t portfolio .
+   ```
+   > You can specify the environment with `SETUP_ENVINROMENT` (for example, `local` or `production`). If not specified, the production environment will be used.
+3. Start the container:
+   ```bash
+   docker run --rm -p 3000:3000 portfolio
+   ```
+4. Open the browser and visit:  
+   [http://localhost:3000/](http://localhost:3000/)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## **Project Structure**
+- **`messages/`**: Contains JSON files for localization of texts in various languages.
+- **`src/`**: Source code, divided into:
+    - **`pages/`**: The main pages of the site.
+    - **`components/`**: Reusable components.
+- **`public/`**: Static files such as images and resources.
