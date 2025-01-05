@@ -8,7 +8,7 @@ export default function Header() {
   const locale = useLocale() as Locale;
   
   return (<>
-        <div className="my-20 flex gap-8">
+        <div className="flex gap-4 my-10 text-sm sm:gap-8 sm:my-14 md:my-20 sm:text-base">
             <Link href={"/"}>{t('home')}</Link>
             <Link href={"/experiences"}>{t('experiences')}</Link>
             <Link href={"/projects"}>{t('projects')}</Link>

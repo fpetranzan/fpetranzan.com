@@ -50,9 +50,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`mx-auto max-w-4xl ${robotoCondensed.className}`}>
+      <body className={`mx-auto max-w-72 sm:max-w-lg md:max-w-2xl lg:max-w-4xl ${robotoCondensed.className}`}>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class">
+          <ThemeProvider attribute="class" enableSystem={false}>
             <Header />
             {children}
             <Footer />

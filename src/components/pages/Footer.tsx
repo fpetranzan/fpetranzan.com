@@ -4,9 +4,9 @@ import Social from "../utils/Social";
 export default function Footer() {
 
   return (<>
-        <hr/>
+        <hr className="my-3 sm:my-0"/>
         <Social />
-        <div className="flex items-end gap-4 mb-16">
+        <div className="flex items-end gap-4 mb-12 text-sm sm:mb-16 sm:text-base">
           <p>fpetranzan.com - My personal Portfolio © 2024 Francesco Petranzan.</p>
         </div>
     </>

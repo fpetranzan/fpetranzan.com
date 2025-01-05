@@ -8,34 +8,31 @@ export default function Project({ project }: { project: string }) {
 
     return (<>
         <div className="my-5">
-            <div className="flex mt-3">
-                <p className="text-2xl mr-auto">{t(`${project}.name`)}</p>
-                <p className="text-base font-light">{t(`${project}.year`)}</p>
+            <div className="flex items-end mt-3">
+                <p className="text-xl mr-auto sm:text-2xl">{t(`${project}.name`)}</p>
+                <p className="text-sm font-light sm:text-base">{t(`${project}.year`)}</p>
             </div>
             <hr />
-            <div className="flex gap-1 my-3">
+            <div className="flex gap-1 my-2 sm:my-3">
                 {
                     tecnologies.map((tecnology) => (
-                        <div key={tecnology} className="border border-slate-400 rounded w-fit px-1 py-0.5">
-                            <span className="text-sm tracking-wide">
+                        <div key={tecnology} className="border border-slate-400 rounded w-fit px-1">
+                            <span className="text-xs tracking-wide sm:text-sm">
                                 {t(`${project}.tecnologies.${tecnology}`)}
                             </span>
                         </div>
                     ))
                 }
             </div>
-            <div className="mb-3">
+            <div className="my-2 text-sm sm:my-3 sm:text-base">
                 {t.rich(`${project}.description`, {
-                    p: (chunks) => <p>{chunks}</p>,
-                    table: (chunks) => <table className="w-full my-3">{chunks}</table>,
-                    td: (chunks) => <td>{chunks}</td>,
-                    tr: (chunks) => <tr>{chunks}</tr>
+                    p: (chunks) => <p>{chunks}</p>
                 })}
             </div>
             <a href={t(`${project}.link`)} target="_blank">
                 <div className="flex items-center gap-1 border border-slate-400 rounded w-fit px-1 py-0.5">
                     <FaGithub className="text-base"/>
-                    <span className="text-sm tracking-wide">Github</span>
+                    <span className="text-xs tracking-wide sm:text-sm">Github</span>
                 </div>
             </a>
         </div>

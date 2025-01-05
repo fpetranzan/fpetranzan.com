@@ -7,9 +7,9 @@ export default function HomePage() {
 
   return (<>
     <div>
-      <p className="text-2xl mb-5">{t('title')}</p>
+      <p className="text-xl mb-3 sm:mb-5 sm:text-2xl">{t('title')}</p>
       {t.rich('content', {
-        p: (chunks) => <p className='my-3'>{chunks}</p>
+        p: (chunks) => <p className='my-2 text-sm sm:my-3 sm:text-base'>{chunks}</p>
       })}
     </div>
   </>);

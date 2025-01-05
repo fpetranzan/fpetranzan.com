@@ -8,27 +8,27 @@ export default function Experience({ experience }: { experience: string }) {
 
     return (<>
         <div className="my-5">
-            <p className="text-2xl">{t(`${experience}.name`)}</p>
+            <p className="text-xl sm:text-2xl">{t(`${experience}.name`)}</p>
             <hr />
-            <div className="flex mt-3">
-                <p className="mr-auto text-lg">{t(`${experience}.role`)}</p>
-                <p className="text-base font-light">{t(`${experience}.start`)} - {t(`${experience}.end`)}</p>
+            <div className="flex mt-3 items-center">
+                <p className="mr-auto text-md sm:text-lg">{t(`${experience}.role`)}</p>
+                <p className="text-sm font-light sm:text-base">{t(`${experience}.start`)} - {t(`${experience}.end`)}</p>
             </div>
-            <div className="flex gap-1 my-3">
+            <div className="flex gap-1 my-2 sm:my-3">
                 {
                     tecnologies.map((tecnology) => (
-                        <div key={tecnology} className="border border-slate-400 rounded w-fit px-1 py-0.5">
-                            <span className="text-sm tracking-wide">
+                        <div key={tecnology} className="border border-slate-400 rounded w-fit px-1">
+                            <span className="text-xs tracking-wide sm:text-sm">
                                 {t(`${experience}.tecnologies.${tecnology}`)}
                             </span>
                         </div>
                     ))
                 }
             </div>
-            <p className="mb-3">{t(`${experience}.description`)}</p>
+            <p className="my-2 text-sm sm:my-3 sm:text-base">{t(`${experience}.description`)}</p>
             {
                 activities.map((activity) => (
-                    <li key={activity}>
+                    <li key={activity} className="text-sm sm:text-base">
                         {t(`${experience}.activities.${activity}`)}
                     </li>
                 ))
