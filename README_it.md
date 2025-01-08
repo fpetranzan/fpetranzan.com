@@ -1,8 +1,8 @@
-# **fpetranzan.com**
+# **fpetranzan.me**
 
-lang [IT]: [en](https://github.com/fpetranzan/fpetranzan.com/blob/master/README.md) | [it](https://github.com/fpetranzan/fpetranzan.com/blob/master/README_it.md)
+lang [IT]: [en](https://github.com/fpetranzan/fpetranzan.me/blob/master/README.md) | [it](https://github.com/fpetranzan/fpetranzan.me/blob/master/README_it.md)
 
-**fpetranzan.com** è un progetto personale nato con l'obiettivo di creare un portfolio semplice, per mettere in risalto il contenuto con una grafica e funzionalità minimali. Il sito include una mia descrizione, una panoramica dei miei lavori, e i progetti che ho sviluppato.  
+**fpetranzan.me** è un progetto personale nato con l'obiettivo di creare un portfolio semplice, per mettere in risalto il contenuto con una grafica e funzionalità minimali. Il sito include una mia descrizione, una panoramica dei miei lavori, e i progetti che ho sviluppato.  
 Questo progetto ha rappresentato una sfida personale dandomi la possibilità di sviluppare nuove conoscenze, poiché mi sono avventurato in tecnologie come **Next.js** e **Tailwind CSS**, che non appartengono al mio solito stack da sviluppatore backend.
 
 ## **Funzionalità Principali**
@@ -29,8 +29,8 @@ Il progetto può essere eseguito facilmente tramite **Docker**.
 ### **Avvio tramite Docker**
 1. Clona il repository:
    ```bash
-   git clone https://github.com/fpetranzan/fpetranzan.com
-   cd fpetranzan.com
+   git clone https://github.com/fpetranzan/fpetranzan.me.git
+   cd fpetranzan.me
    ```
 2. Crea l'immagine Docker:
    ```bash
